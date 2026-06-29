@@ -1,4 +1,5 @@
 Build/
+Assets/AppIcon.iconset/
 *.app/
 .DS_Store
 __pycache__/

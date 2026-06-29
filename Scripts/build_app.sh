@@ -22,6 +22,7 @@ PY
 
 python3 "$ROOT/Scripts/prepare_assets.py"
 
+cp "$ROOT/Assets/AppIcon.icns" "$RESOURCES/"
 cp "$ROOT"/Assets/carrot_*.png "$RESOURCES/"
 
 export CLANG_MODULE_CACHE_PATH="$BUILD_DIR/ModuleCache"
@@ -60,6 +61,8 @@ cat > "$CONTENTS/Info.plist" <<PLIST
   <true/>
   <key>NSHighResolutionCapable</key>
   <true/>
+  <key>CFBundleIconFile</key>
+  <string>AppIcon</string>
 </dict>
 </plist>
 PLIST
